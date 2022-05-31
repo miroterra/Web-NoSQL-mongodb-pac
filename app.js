@@ -23,7 +23,6 @@ app.use(function (error, req, res, next) {
   res.status(500).render('500');
 });
 
-//데이터베이스 연결 후 실행 되도록
 db.connectToDatabase().then(function () {
   app.listen(3000);
 });
